@@ -21,9 +21,8 @@ public class Spawn : MonoBehaviour {
         while (true)
         {
 
-            GameObject go = new GameObject();
-            go = (GameObject)Instantiate(moneySpawner, transform.position, transform.rotation);
-           go.transform.position += new Vector3(Random.Range(-8.5f, 8.5f), 0);
+            GameObject go = (GameObject)Instantiate(moneySpawner, transform.position, transform.rotation);
+           go.transform.position += new Vector3(Random.Range(-8.5f, 8.8f), 0);
            yield return new WaitForSeconds(spawnTime);
         }
     }
