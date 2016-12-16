@@ -3,6 +3,7 @@ using System.Collections;
 
 public class Player : MonoBehaviour {
 
+    //public speed variable to make speed changes easier
     public float speed;
 
 	// Use this for initialization
